@@ -5,6 +5,8 @@ export default function Homepage() {
     <>
     <div>
       This is the Homepage
+      <p className="text-5xl">Amazing</p>
+      Show forth
     </div>
     </>
   )
