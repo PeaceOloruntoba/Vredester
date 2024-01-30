@@ -1,11 +1,14 @@
+import Footer from "./components/Footer";
+import NavBar from "./components/NavBar";
 import HomePage from "./pages/HomePage";
 
 
 function App() {
   return (
     <div className="App">
-      <h1 className="text-4xl font-semibold">Vredester INC</h1>
-      <HomePage/>
+      <NavBar/>
+        <HomePage/>
+      <Footer />
     </div>
   );
 }
