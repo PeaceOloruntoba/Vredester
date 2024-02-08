@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from "../assets"
+import logo from "../assets/images/1.png"
 export default function NavBar() {
   return (
       <div className='grid text-xl font-bold'>
@@ -8,7 +8,7 @@ export default function NavBar() {
           <span>Social Icons ...</span>
         </div>
     <div className='flex items-center justify-around px-6 py-2'>
-      <img src="" alt="" />
+      <img src={logo} alt="" className='rounded-lg w-16' />
       <ul className='flex gap-8'>
         <li><a href="/">Home</a></li>
         <li><a href="/">About</a></li>
