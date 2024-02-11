@@ -7,6 +7,7 @@ import { SlScreenDesktop } from "react-icons/sl";
 export default function NavBar() {
   const [theme, setTheme] = useState("system");
   const element = document.documentElement
+  const darkQuery = window.matchMedia("(prefers-color-scheme: dark)")
   const options = [
     {
       icon: <TiWeatherSunny />,
@@ -21,6 +22,13 @@ export default function NavBar() {
       text: "system",
     },
   ];
+  function onWindowMatch() {
+    if(localStorage.theme === 'dark' || (!("theme" in localStorage) && darkQuery.matches)){
+      element.classList.add("dark")
+    } else {
+      element.classList.remove("dark")
+    }
+  }
   useEffect(()=>{
     switch(theme) {
       case "dark":
