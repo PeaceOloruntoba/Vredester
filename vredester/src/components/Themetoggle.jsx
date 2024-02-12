@@ -1,4 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { useEffect } from 'react';
+import { IoMoon } from 'react-icons/io5';
+import { SlScreenDesktop } from 'react-icons/sl';
+import { TiWeatherSunny } from 'react-icons/ti';
 
 export default function Themetoggle() {
   const [theme, setTheme] = useState("system");
