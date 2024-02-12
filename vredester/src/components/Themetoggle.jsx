@@ -44,6 +44,12 @@ export default function Themetoggle() {
     }
   }, [theme])
   return (
-    <div>Themetoggle</div>
+    <div>
+      <div className="dark:bg-gray-950 bg-gray-100 rounded items-center justify-center dark:text-gray-100 p-2">
+        {options?.map((opt) => (
+          <button key={opt.text} onClick={() => setTheme(opt.text)} className={`rounded-full w-7 h-7 p-1 bg-slate-200 items-center justify-center text-center text-slate-800 m-1 ${ theme === opt.text && "bg-blue-900"}`}>{opt.icon}</button>
+        ))}
+      </div>
+    </div>
   )
 }
