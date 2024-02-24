@@ -6,7 +6,9 @@ import Footer from './components/Footer';
 import { IoSunnyOutline, IoMoon, IoDesktopOutline } from "react-icons/io5";
 
 function App() {
-  const [theme, setTheme] = useState("system")
+  const [theme, setTheme] = useState(
+    localStorage.getItem("theme") ? localStorage.getItem("theme") : "system"
+  )
   const element = document.documentElement
   const darkQuery = window.matchMedia("(prefers-color-scheme: dark)")
   console.log(darkQuery,"darkQuery")
@@ -25,10 +27,13 @@ function App() {
     }
   ]
   function onWindowMatch(){
-    // if(localStorage.theme === 'dark' || ){
-
-    // }
+    if(localStorage.theme === 'dark' || (!("theme" in localStorage) && darkQuery.matches)){
+      element.classList.add("dark");
+    } else {
+      element.classList.remove("dark")
+    }
   }
+  onWindowMatch()
   useEffect(()=>{
     switch (theme) {
       case 'dark':
@@ -41,6 +46,7 @@ function App() {
         break;
       default:
         localStorage.removeItem("theme");
+        onWindowMatch()
         break;
     }
   },[theme])
