@@ -1,15 +1,16 @@
-import { useState } from 'react';
+// import { useState } from 'react';
 import './App.css';
 import { logo } from './assets';
 import Footer from './components/Footer';
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false);
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
-  }
+  // const [darkMode, setDarkMode] = useState(false);
+  // const toggleDarkMode = () => {
+  //   setDarkMode(!darkMode);
+  // }
   return (
-    <div className={`${darkMode && "dark"} App`}>
+    // <div className={`${darkMode && "dark"} App`}>
+    <div>
       <section>
         <nav className='flex items-center justify-around bg-gray-400 dark:bg-slate-900'>
           <div>
@@ -25,7 +26,7 @@ function App() {
         </ul>
           </div>
           <div>
-            <button className='absolute rounded-full w-16 h-16 top-6 right-16 bg-slate-900 dark:bg-slate-300 text-white dark:text-black font-semibold' onClick={toggleDarkMode}>{darkMode? "LHT" : "DRK"}</button>
+            {/* <button className='absolute rounded-full w-16 h-16 top-6 right-16 bg-slate-900 dark:bg-slate-300 text-white dark:text-black font-semibold' onClick={toggleDarkMode}>{darkMode? "LHT" : "DRK"}</button> */}
           </div>
         </nav>
       </section>
