@@ -50,6 +50,15 @@ function App() {
         break;
     }
   },[theme])
+  darkQuery.addEventListener("change", (e) => {
+    if (!("theme" in localStorage)){
+      if (e.matches){
+        element.classList.add("dark")
+      } else {
+        element.classList.remove("dark")
+      }
+    }
+  })
   // const [darkMode, setDarkMode] = useState(false);
   // const toggleDarkMode = () => {
   //   setDarkMode(!darkMode);
