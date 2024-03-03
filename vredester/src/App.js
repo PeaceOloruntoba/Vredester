@@ -4,6 +4,7 @@ import './App.css';
 import { logo } from './assets';
 import Footer from './components/Footer';
 import { IoSunnyOutline, IoMoon, IoDesktopOutline } from "react-icons/io5";
+import HomePage from './Pages/HomePage';
 
 function App() {
   const [theme, setTheme] = useState(
@@ -93,6 +94,8 @@ function App() {
           </div>
         </nav>
       </section>
+
+      <HomePage />
 
       <Footer />
     </div>
