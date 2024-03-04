@@ -9,8 +9,8 @@ export default function Navbar() {
       </div>
       <div className="">
         <ul className='flex gap-10 text-2xl font-bold uppercase'>
-          <li>Home</li>
-          <li>Home</li>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about"></a></li>
           <li>Home</li>
           <li>Home</li>
           <li>Home</li>

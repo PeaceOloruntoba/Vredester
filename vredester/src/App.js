@@ -70,15 +70,17 @@ function App() {
       <section>
         <nav className='flex items-center justify-around bg-gray-400 dark:bg-slate-900'>
           <div>
-          <img src={logo} alt="" className='w-28'/>
+            <a href='/'>
+              <img src={logo} alt="" className='w-28'/>
+            </a>
           </div>
           <div>
           <ul className='flex gap-10 text-xl font-bold uppercase'>
           <li><a href='/'>Home</a></li>
-          <li><a href='/'>About</a></li>
-          <li><a href='/'>Services</a></li>
-          <li><a href='/'>Portfolio</a></li>
-          <li><a href='/'>Contact</a></li>
+          <li><a href='/about'>About</a></li>
+          <li><a href='/services'>Services</a></li>
+          <li><a href='/portfolio'>Portfolio</a></li>
+          <li><a href='/contact'>Contact</a></li>
         </ul>
           </div>
           <div className='dark:bg-slate-800 bg-gray-100 rounded'>
