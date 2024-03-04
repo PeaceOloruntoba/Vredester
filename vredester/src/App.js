@@ -12,30 +12,30 @@ function App() {
   )
   const element = document.documentElement
   const darkQuery = window.matchMedia("(prefers-color-scheme: dark)")
-  console.log(darkQuery,"darkQuery")
+  console.log(darkQuery, "darkQuery")
   const options = [
     {
-      icon: <IoSunnyOutline />, 
+      icon: <IoSunnyOutline />,
       text: "light"
     },
     {
-      icon: <IoMoon />, 
+      icon: <IoMoon />,
       text: "dark"
     },
     {
-      icon: <IoDesktopOutline />, 
+      icon: <IoDesktopOutline />,
       text: "system"
     }
   ]
-  function onWindowMatch(){
-    if(localStorage.theme === 'dark' || (!("theme" in localStorage) && darkQuery.matches)){
+  function onWindowMatch() {
+    if (localStorage.theme === 'dark' || (!("theme" in localStorage) && darkQuery.matches)) {
       element.classList.add("dark");
     } else {
       element.classList.remove("dark")
     }
   }
   onWindowMatch()
-  useEffect(()=>{
+  useEffect(() => {
     switch (theme) {
       case 'dark':
         element.classList.add('dark');
@@ -50,10 +50,10 @@ function App() {
         onWindowMatch()
         break;
     }
-  },[theme])
+  }, [theme])
   darkQuery.addEventListener("change", (e) => {
-    if (!("theme" in localStorage)){
-      if (e.matches){
+    if (!("theme" in localStorage)) {
+      if (e.matches) {
         element.classList.add("dark")
       } else {
         element.classList.remove("dark")
@@ -67,35 +67,40 @@ function App() {
   return (
     // <div className={`${darkMode && "dark"} App`}>
     <div>
-      <section>
-        <nav className='flex items-center justify-around bg-gray-400 dark:bg-slate-900'>
+        <nav className='flex items-center justify-between bg-gray-400 dark:bg-slate-900'>
           <div>
             <a href='/'>
-              <img src={logo} alt="" className='w-28'/>
+              <img src={logo} alt="" className='w-20' />
             </a>
           </div>
-          <div>
-          <ul className='flex gap-10 text-xl font-bold uppercase'>
-          <li><a href='/'>Home</a></li>
-          <li><a href='/about'>About</a></li>
-          <li><a href='/services'>Services</a></li>
-          <li><a href='/portfolio'>Portfolio</a></li>
-          <li><a href='/contact'>Contact</a></li>
-        </ul>
+          <div className=''>
+            <ul className='lg:flex gap-10 text-xl font-bold uppercase'>
+              <li className='my-1'><a href='/'>Home</a></li>
+              <li className='my-1'><a href='/about'>About</a></li>
+              <li className='my-1'><a href='/services'>Services</a></li>
+              <li className='my-1'><a href='/portfolio'>Portfolio</a></li>
+              <li className='my-1'><a href='/contact'>Contact</a></li>
+            </ul>
           </div>
-          <div className='dark:bg-slate-800 bg-gray-100 rounded'>
+          <div className='dark:bg-slate-800 bg-gray-100 rounded hidden lg:block m-1'>
             {/* <button className='absolute rounded-full w-16 h-16 top-6 right-16 bg-slate-900 dark:bg-slate-300 text-white dark:text-black font-semibold' onClick={toggleDarkMode}>{darkMode? "LHT" : "DRK"}</button> */}
             {
-              options?.map(opt=>(
-            <button key={opt.text} onClick={()=>setTheme(opt.text)} className={`text-2xl rounded-full m-2 ${theme === opt.text && "text-sky-600"}`}>
-               {opt.icon}
-            </button>
-
+              options?.map(opt => (
+                <button key={opt.text} onClick={() => setTheme(opt.text)} className={`text-2xl rounded-full m-2 ${theme === opt.text && "text-sky-600"}`}>{opt.icon}</button>
               ))
             }
           </div>
+          <div className="lg:hidden">
+          <div className='dark:bg-slate-800 bg-gray-100 rounded'>
+            {/* <button className='absolute rounded-full w-16 h-16 top-6 right-16 bg-slate-900 dark:bg-slate-300 text-white dark:text-black font-semibold' onClick={toggleDarkMode}>{darkMode? "LHT" : "DRK"}</button> */}
+            {
+              options?.map(opt => (
+                <button key={opt.text} onClick={() => setTheme(opt.text)} className={`text-2xl rounded-full m-2 ${theme === opt.text && "text-sky-600"}`}>{opt.icon}</button>
+              ))
+            }
+          </div>
+          </div>
         </nav>
-      </section>
 
       <HomePage />
 
