@@ -5,6 +5,7 @@ import { logo } from './assets';
 import Footer from './components/Footer';
 import { IoSunnyOutline, IoMoon, IoDesktopOutline } from "react-icons/io5";
 import HomePage from './Pages/HomePage';
+import Facebook from './components/Facebook';
 
 function App() {
   const [theme, setTheme] = useState(
@@ -102,7 +103,9 @@ function App() {
           </div>
         </nav>
 
-      <HomePage />
+        <Routes>
+            <Route exact path="/" element={<Homepage />} />
+          </Routes>
 
       <Footer />
     </div>
