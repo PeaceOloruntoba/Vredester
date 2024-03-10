@@ -74,7 +74,7 @@ function App() {
     <div>
     <Router>
 
-        <nav className='flex items-center justify-between bg-gray-400 dark:bg-slate-900'>
+        <nav className='flex items-center justify-between bg-white dark:bg-[#060922]'>
           <div>
             <Link to='/'>
               <img src={logo} alt="" className='w-20' />
