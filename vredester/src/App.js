@@ -1,11 +1,15 @@
 // import { useState } from 'react';
 import { useEffect, useState } from 'react';
+import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
 import './App.css';
 import { logo } from './assets';
 import Footer from './components/Footer';
 import { IoSunnyOutline, IoMoon, IoDesktopOutline } from "react-icons/io5";
 import HomePage from './Pages/HomePage';
-import Facebook from './components/Facebook';
+import AboutPage from './Pages/AboutPage';
+import ServicesPage from './Pages/ServicesPage';
+import PortfolioPage from './Pages/PortfolioPage';
+import ContactPage from './Pages/ContactPage';
 
 function App() {
   const [theme, setTheme] = useState(
@@ -68,19 +72,21 @@ function App() {
   return (
     // <div className={`${darkMode && "dark"} App`}>
     <div>
+    <Router>
+
         <nav className='flex items-center justify-between bg-gray-400 dark:bg-slate-900'>
           <div>
-            <a href='/'>
+            <Link to='/'>
               <img src={logo} alt="" className='w-20' />
-            </a>
+            </Link>
           </div>
           <div className=''>
             <ul className='lg:flex gap-10 text-xl font-bold uppercase'>
-              <li className='my-1'><a href='/'>Home</a></li>
-              <li className='my-1'><a href='/about'>About</a></li>
-              <li className='my-1'><a href='/services'>Services</a></li>
-              <li className='my-1'><a href='/portfolio'>Portfolio</a></li>
-              <li className='my-1'><a href='/contact'>Contact</a></li>
+              <li className='my-1'><Link to='/'>Home</Link></li>
+              <li className='my-1'><Link to='/about'>About</Link></li>
+              <li className='my-1'><Link to='/services'>Services</Link></li>
+              <li className='my-1'><Link to='/portfolio'>Portfolio</Link></li>
+              <li className='my-1'><Link to='/contact'>Contact</Link></li>
             </ul>
           </div>
           <div className='dark:bg-slate-800 bg-gray-100 rounded hidden lg:block m-1'>
@@ -104,10 +110,15 @@ function App() {
         </nav>
 
         <Routes>
-            <Route exact path="/" element={<Homepage />} />
-          </Routes>
+            <Route exact path="/" element={<HomePage />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/services" element={<ServicesPage />} />
+            <Route path="/portfolio" element={<PortfolioPage />} />
+            <Route path="/contact" element={<ContactPage />} />
+        </Routes>
 
       <Footer />
+    </Router>
     </div>
   );
 }
