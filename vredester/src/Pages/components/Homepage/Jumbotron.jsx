@@ -1,6 +1,6 @@
 import React from 'react'
-import bgimg from '../assets/images/jumbotronbg.jpg'
-import diss from '../assets/images/jumbotronimg.png'
+import bgimg from '../../../assets/images/jumbotronbg.jpg'
+import diss from '../../../assets/images/jumbotronimg.png'
 
 export default function Jumbotron() {
   return (
