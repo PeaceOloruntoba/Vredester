@@ -72,7 +72,7 @@ function App() {
   return (
     // <div className={`${darkMode && "dark"} App`}>
     <div>
-    <Router>
+      <Router>
 
         <nav className='flex items-center justify-between bg-white dark:bg-[#060922] fixed z-10 w-full dark:text-white text-[#060922]'>
           <div>
@@ -98,27 +98,27 @@ function App() {
             }
           </div>
           <div className="lg:hidden">
-          <div className='dark:bg-slate-800 bg-gray-100 rounded'>
-            {/* <button className='absolute rounded-full w-16 h-16 top-6 right-16 bg-slate-900 dark:bg-slate-300 text-white dark:text-black font-semibold' onClick={toggleDarkMode}>{darkMode? "LHT" : "DRK"}</button> */}
-            {
-              options?.map(opt => (
-                <button key={opt.text} onClick={() => setTheme(opt.text)} className={`text-2xl rounded-full m-2 ${theme === opt.text && "text-sky-600"}`}>{opt.icon}</button>
-              ))
-            }
-          </div>
+            <div className='dark:bg-slate-800 bg-gray-100 rounded'>
+              {/* <button className='absolute rounded-full w-16 h-16 top-6 right-16 bg-slate-900 dark:bg-slate-300 text-white dark:text-black font-semibold' onClick={toggleDarkMode}>{darkMode? "LHT" : "DRK"}</button> */}
+              {
+                options?.map(opt => (
+                  <button key={opt.text} onClick={() => setTheme(opt.text)} className={`text-2xl rounded-full m-2 ${theme === opt.text && "text-sky-600"}`}>{opt.icon}</button>
+                ))
+              }
+            </div>
           </div>
         </nav>
 
         <Routes>
-            <Route exact path="/" element={<HomePage />} />
-            <Route path="/about" element={<AboutPage />} />
-            <Route path="/services" element={<ServicesPage />} />
-            <Route path="/portfolio" element={<PortfolioPage />} />
-            <Route path="/contact" element={<ContactPage />} />
+          <Route exact path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/services" element={<ServicesPage />} />
+          <Route path="/portfolio" element={<PortfolioPage />} />
+          <Route path="/contact" element={<ContactPage />} />
         </Routes>
 
-      <Footer />
-    </Router>
+        <Footer />
+      </Router>
     </div>
   );
 }

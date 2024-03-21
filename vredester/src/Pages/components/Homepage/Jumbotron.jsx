@@ -7,8 +7,8 @@ export default function Jumbotron() {
   return (
     <div className='relative'>
   <img src={bgimg} alt="" className='absolute inset-0 object-cover w-full h-full' />
-  <div className='inset-0 bg-white dark:bg-[#060922] opacity-80'>
-  <div className="grid grid-cols-2 justify-center items-center p-32">
+  <div className='inset-0 bg-white dark:bg-[#060922] opacity-80 pt-24 lg:pt-0'>
+  <div className="grid lg:grid-cols-2 justify-center items-center p-32">
     <div className="flex flex-col gap-8">
       <span className='flex gap-8 text-[#060922] dark:text-white text-xl px-3'>
         <a href="/" className='hover:text-blue-600'><IoLogoFacebook/></a>
