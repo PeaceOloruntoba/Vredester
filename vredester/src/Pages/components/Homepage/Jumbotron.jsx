@@ -18,7 +18,7 @@ export default function Jumbotron() {
       </span>
       <span className='text-2xl text-blue-600 font-bold uppercase'>-- it solutions  --</span>
       <span className='text-5xl font-semibold text-[#060922] dark:text-white'>Providing The Best Services & IT <span className='text-blue-600 text-pretty underline underline-offset-8'>Solutions</span></span>
-      <span className='text-[#060922] dark:text-white text-xl'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed architecto dolorum inventore totam adipisci</span>
+      <span className='text-gray-400  text-xl'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed architecto dolorum inventore totam adipisci</span>
       <a href="/"><button className='text-white text-xl uppercase bg-blue-600 w-fit px-10 py-4 rounded opacity-80 font-bold hover:bg-[#060922] hover:dark:bg-white hover:text-blue-600 hover:dark:text-blue-600'>Contact us</button></a>
     </div>
     <div className="">
