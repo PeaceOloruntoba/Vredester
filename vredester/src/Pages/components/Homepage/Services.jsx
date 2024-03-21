@@ -11,7 +11,7 @@ export default function Services() {
         <span className='text-gray-400 font-semibold'>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit OmnisId Atque Dignissimos Repellat Quae Ullam.</span>
           </div>
           <div className="button flex flex-end justify-end">
-            <a href="/"><button>See all services</button></a>
+            <a href="/"><button className='text-white text-xl uppercase bg-blue-600 w-fit px-10 py-4 opacity-80 font-bold hover:bg-transparent hover:ring-2 ring-blue-600 hover:dark:bg-transparent hover:text-blue-600 hover:dark:text-blue-600 rounded-tr-3xl rounded-bl-3xl'>See all services</button></a>
           </div>
         </div>
       </div>
