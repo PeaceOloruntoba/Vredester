@@ -9,6 +9,7 @@ export default function HomePage() {
       <Jumbotron />
       <Services />
       <About/>
+      <Choice />
     </div>
   )
 }
