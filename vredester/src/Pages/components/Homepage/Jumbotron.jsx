@@ -19,7 +19,7 @@ export default function Jumbotron() {
       <span className='text-2xl text-[#09aff4] font-bold uppercase'>-- it solutions  --</span>
       <span className='text-5xl font-semibold text-[#060922] dark:text-white'>Providing The Best Services & IT <span className='text-[#09aff4] text-pretty underline underline-offset-8'>Solutions</span></span>
       <span className='text-gray-400  text-xl'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed architecto dolorum inventore totam adipisci</span>
-      <a href="/"><button className='text-white text-xl uppercase bg-[#09aff4] w-fit px-10 py-4 opacity-80 font-bold hover:bg-transparent hover:dark:bg-transparent hover:text-[#09aff4] hover:dark:text-[#09aff4] rounded-tr-3xl rounded-bl-3xl hover:ring-2 ring-[#09aff4]'>Contact us</button></a>
+      <a href="/"><button className='text-white text-xl uppercase bg-[#09aff4] w-fit px-10 py-4 opacity-80 font-bold hover:bg-transparent hover:dark:bg-transparent hover:text-[#09aff4] hover:dark:text-[#09aff4] rounded-tr-3xl rounded-bl-3xl hover:ring-2 ring-[#09aff4] transition-all duration-300 '>Contact us</button></a>
     </div>
     <div className="">
     <img src={diss} alt="" className='' />
