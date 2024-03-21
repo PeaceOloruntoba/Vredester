@@ -1,10 +1,11 @@
 import React from 'react'
+import imge from '../../../assets/images/why.png'
 
 export default function Choice() {
   return (
     <div className='bg-white dark:bg-[#060922] text-[#060922] dark:text-white lg:p-32 p-8 py-12'>
       <div className="grid lg:flex lg:flex-row-reverse"></div>
-      <img src="" alt="" />
+      <img src={imge} alt="" />
       <div className="flex flex-col">
         <span>--Why Choose Us--</span>
         <span>Why our customers choose <span>Working</span> with us</span>
