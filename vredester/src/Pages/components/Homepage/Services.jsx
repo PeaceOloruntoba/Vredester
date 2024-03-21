@@ -25,7 +25,7 @@ export default function Services() {
                   <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
                 </svg>
               </span>
-              <span className="text-white font-bold text-2xl">Web Development</span>
+              <span className="dark:text-white font-bold text-2xl">Web Development</span>
               <span className="text-gray-300 font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque repellendus minima reiciendis nobis doloe obcarecati.</span>
               <a href="" className="font-semibold flex items-center justify-between gap-2 hover:gap-4 text-[#09aff4] w-fit group-hover:text-white transition-all duration-300 ">Read More <HiArrowSmRight /></a>
             </div>
@@ -39,7 +39,7 @@ export default function Services() {
                 </svg>
 
               </span>
-              <span className="text-white font-bold text-2xl">Mobile Development</span>
+              <span className="dark:text-white font-bold text-2xl">Mobile Development</span>
               <span className="text-gray-300 font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque repellendus minima reiciendis nobis doloe obcarecati.</span>
               <a href="" className="font-semibold flex items-center justify-between gap-2 hover:gap-4 text-[#09aff4] w-fit group-hover:text-white transition-all duration-300 ">Read More <HiArrowSmRight /></a>
             </div>
@@ -53,7 +53,7 @@ export default function Services() {
                 </svg>
 
               </span>
-              <span className="text-white font-bold text-2xl">Data Analysis</span>
+              <span className="dark:text-white font-bold text-2xl">Data Analysis</span>
               <span className="text-gray-300 font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque repellendus minima reiciendis nobis doloe obcarecati.</span>
               <a href="" className="font-semibold flex items-center justify-between gap-2 hover:gap-4 text-[#09aff4] w-fit group-hover:text-white transition-all duration-300 ">Read More <HiArrowSmRight /></a>
             </div>
@@ -67,7 +67,7 @@ export default function Services() {
                 </svg>
 
               </span>
-              <span className="text-white font-bold text-2xl">Graphics Design</span>
+              <span className="dark:text-white font-bold text-2xl">Graphics Design</span>
               <span className="text-gray-300 font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque repellendus minima reiciendis nobis doloe obcarecati.</span>
               <a href="" className="font-semibold flex items-center justify-between gap-2 hover:gap-4 text-[#09aff4] w-fit group-hover:text-white transition-all duration-300 ">Read More <HiArrowSmRight /></a>
             </div>
@@ -78,7 +78,7 @@ export default function Services() {
               <span className="text-[#09aff4] group-hover:text-white">
                 <TbShoppingBagDiscount className='w-24 h-24' />
               </span>
-              <span className="text-white font-bold text-2xl">Digital Marketing</span>
+              <span className="dark:text-white font-bold text-2xl">Digital Marketing</span>
               <span className="text-gray-300 font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque repellendus minima reiciendis nobis doloe obcarecati.</span>
               <a href="" className="font-semibold flex items-center justify-between gap-2 hover:gap-4 text-[#09aff4] w-fit group-hover:text-white transition-all duration-300 ">Read More <HiArrowSmRight /></a>
             </div>
@@ -91,7 +91,7 @@ export default function Services() {
                   <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 21v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21m0 0h4.5V3.545M12.75 21h7.5V10.75M2.25 21h1.5m18 0h-18M2.25 9l4.5-1.636M18.75 3l-1.5.545m0 6.205 3 1m1.5.5-1.5-.5M6.75 7.364V3h-3v18m3-13.636 10.5-3.819" />
                 </svg>
               </span>
-              <span className="text-white font-bold text-2xl">Real Estate</span>
+              <span className="dark:text-white font-bold text-2xl">Real Estate</span>
               <span className="text-gray-300 font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque repellendus minima reiciendis nobis doloe obcarecati.</span>
               <a href="" className="font-semibold flex items-center justify-between gap-2 hover:gap-4 text-[#09aff4] w-fit transition-all duration-300 group-hover:text-white">Read More <HiArrowSmRight /></a>
             </div>
