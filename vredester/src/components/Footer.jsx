@@ -1,7 +1,7 @@
 import React from 'react'
 import pattern from '../assets/images/footerbg.jpg'
-import { logo } from '../assets';
-import { HiArrowSmRight } from 'react-icons/hi';
+import { logo } from '../assets'
+import { HiArrowSmRight } from 'react-icons/hi'
 
 export default function Footer() {
   return (
