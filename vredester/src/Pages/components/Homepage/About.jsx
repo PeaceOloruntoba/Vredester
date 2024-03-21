@@ -1,5 +1,6 @@
 import React from 'react'
 import imge from '../../../assets/images/aboutsec.png'
+import peace from '../../../assets/images/Peace.png'
 
 export default function About() {
   return (
@@ -48,8 +49,9 @@ export default function About() {
                 </div>
               </div>
             </div>
-            <div className="flex">
+            <div className="flex justify-between items-center">
               <a href="/"><button className='text-white text-xl uppercase bg-[#09aff4] w-fit px-10 py-4 opacity-80 font-bold hover:bg-transparent hover:ring-2 ring-[#09aff4] hover:dark:bg-transparent hover:text-[#09aff4] hover:dark:text-[#09aff4] rounded-tr-3xl rounded-bl-3xl flex items-center justify-between gap-2 hover:gap-4 transition-all duration-300'>Get in touch</button></a>
+              <img src={peace} alt="" />
             </div>
           </div>
           <div>
