@@ -1,1 +1,1 @@
-export { default as logo } from "./images/1.png";
+export { default as logo } from "./images/removebg1.png";
