@@ -66,7 +66,7 @@ export default function Services() {
               </span>
               <span className="dark:text-white font-bold text-2xl">Graphics Design</span>
               <span className="text-gray-300 font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque repellendus minima reiciendis nobis doloe obcarecati.</span>
-              <a href="" className="font-semibold flex items-center justify-between gap-2 hover:gap-4 text-[#09aff4] w-fit group-hover:text-white transition-all duration-300 ">Read More <HiArrowSmRight /></a>
+              <a href="/" className="font-semibold flex items-center justify-between gap-2 hover:gap-4 text-[#09aff4] w-fit group-hover:text-white transition-all duration-300 ">Read More <HiArrowSmRight /></a>
             </div>
           </div>
           <div className="ring-2 ring-[#09a2ff] rounded-lg p-6 grid gap-3 group relative overflow-hidden">
@@ -77,7 +77,7 @@ export default function Services() {
               </span>
               <span className="dark:text-white font-bold text-2xl">Digital Marketing</span>
               <span className="text-gray-300 font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque repellendus minima reiciendis nobis doloe obcarecati.</span>
-              <a href="" className="font-semibold flex items-center justify-between gap-2 hover:gap-4 text-[#09aff4] w-fit group-hover:text-white transition-all duration-300 ">Read More <HiArrowSmRight /></a>
+              <a href="/" className="font-semibold flex items-center justify-between gap-2 hover:gap-4 text-[#09aff4] w-fit group-hover:text-white transition-all duration-300 ">Read More <HiArrowSmRight /></a>
             </div>
           </div>
           <div className="ring-2 ring-[#09a2ff] rounded-lg p-6 grid gap-3 group relative overflow-hidden">
@@ -90,7 +90,7 @@ export default function Services() {
               </span>
               <span className="dark:text-white font-bold text-2xl">Real Estate</span>
               <span className="text-gray-300 font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque repellendus minima reiciendis nobis doloe obcarecati.</span>
-              <a href="" className="font-semibold flex items-center justify-between gap-2 hover:gap-4 text-[#09aff4] w-fit transition-all duration-300 group-hover:text-white">Read More <HiArrowSmRight /></a>
+              <a href="/" className="font-semibold flex items-center justify-between gap-2 hover:gap-4 text-[#09aff4] w-fit transition-all duration-300 group-hover:text-white">Read More <HiArrowSmRight /></a>
             </div>
           </div>
         </div>
